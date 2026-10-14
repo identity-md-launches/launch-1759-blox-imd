@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "BLOXToken",
+    "name": "BLOX IMD",
+    "symbol": "BLOX",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8800,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x0f44a55663e888bb63618a0c31b68cbc6c01aa71"
+  },
+  "notes": "BLOXToken is an ERC-20 named BLOX IMD (BLOX) with 18 decimals. Its constructor takes no arguments and mints all 1,000,000,000 BLOX once to msg.sender, the factory during launch. Transfers are untaxed. It exposes no mint, burn, admin or upgrade functions. No application contracts are deployed. The pool pairs BLOX with IMD at a 1.25% fee. The deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply; pool.initialPrice records provenance only."
+}
